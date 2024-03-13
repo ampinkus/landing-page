@@ -1,0 +1,419 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+
+/* the body has a color background and the hight occupies all the page*/
+body {
+  display: flex;
+  justify-content: center;
+  font-family: 'Nunito', sans-serif;
+  background: hsl(140, 39%, 30%);
+}
+
+/* On the main content we set the with of the content in % of the with of the page 
+    and the minimum width for the content when the page shrinks
+*/
+.main-content {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 70%;
+  min-width: 1000px;
+}
+
+/* The styling of the navigation bar using Flex to center the items */
+.navegacion {
+  display: flex;
+  background-color: white;
+  height: 60px;
+  border-top-right-radius: 60px;
+  border-top-left-radius: 60px;
+  border-bottom: 3px solid lightslategray;
+}
+
+/* The styling of the logo in the navigation bar */
+.logo{
+    transform: scale(0.5); /* set the desired scale factor */
+    margin-right: 10px;
+  }
+
+/* The styling of the menu items in the navigation bar , with Flex I center the links*/
+.navegacion-items{
+  display: flex;
+  margin-left: auto; /* Push the items to the right */
+  padding-right: 60px;
+  align-items: center; /* Center vertically */
+}  
+
+/* The styling of the links in the navigation bar */
+.navegacion-items a{
+  color: black;
+  font-weight: bolder;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+/* The styling of the links in the navigation bar when hovering */
+.navegacion-items a:hover{
+  color:blue;
+  font-weight: 800;
+  font-size: 1.1rem;
+  text-decoration:underline;
+}
+/* End styling of navigation bar */
+
+
+/* Row 1: Comida Sana & Fresca Para Usted! 
+  a grid with a asymmetrical distribution of 2 columns*/
+.row-1 {
+  display: grid;
+/* The right column is narrow compared to the left one*/
+  grid-template-columns: 5fr 1.8fr;
+  height: 400px;
+} 
+
+/* The left column has a white background */
+.row-1 .left-text{
+  background-color:white;
+}
+
+/* The left column has a green background */
+.row-1 .right-picture{
+  /* I want that the position of the picture in the row-1 are measured against his position */
+  position: relative;
+  background-color:green;
+}
+.sarten-vegetales{
+  /* The position of the pictures in the row-1 are measured against .row-1 .right-picture */
+  position: absolute;
+  /* In % it follows the horizontal shrink */
+  top: 15%;
+  right: 70%;
+}
+
+/* Comida Sana & Fresca<br>Para Usted! */
+.row-1 .header-text{
+  font-size:2rem;
+  font-weight: 800;
+  padding-top: 140px;
+  padding-left: 100px;
+}
+
+/* Creada por nuestros expertos<br>en comida natural */
+.row-1 .normal-text{
+  font-size: 1rem;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-left: 100px;
+}
+
+/* To align the button against the parent */
+.row-1 .button-div{
+  padding-top: 15px;
+  padding-left: 100px;
+}
+
+/* To style the button */
+.row-1 .button-menu{
+  padding: 5px 15px; 
+  background-color: hsl(39, 100%, 50%);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Style the hover over the button */
+.button-menu:hover {
+  background-color: hsl(39, 1000%, 70%);
+}
+
+/* Style the button press, it goes down 2px */
+.button-menu:active {
+	position:relative;
+	top:2px;
+}
+/* End styling of Row 1 */
+
+
+/* Row 2:  About Us
+  a grid with a asymmetrical distribution of 2 columns */
+.row-2 {
+  display: grid;
+  /* The left column is narrow compared to the right one*/
+  grid-template-columns: 1.8fr 5fr;
+  height: 400px;
+} 
+
+.row-2 .left-vegetables{
+  /* I want that the position of the pictures in the row-2 are measured against his position */
+  position: relative;
+  background-color:white;
+}
+
+/* The color of the right column of row 2 */
+.row-2 .right-text{
+  background-color:white;
+}
+
+/* Te pistion of the image with the Chilli, is negative so it is on top of the row-2 */
+.row2-food{
+  position: absolute;
+  /* In % it follows the horizontal shrink to show: src="/assets/images/hero-section-food.png"*/
+  top: -10%;
+}
+
+/* The circle that blends to the left with the body */
+.green-circle{
+  width: 300px;
+  height: 300px;
+  background-color: hsl(140, 39%, 30%);
+  border-radius: 50%;
+  margin-top: 60px;
+  margin-left: -100px
+}
+
+/* The bowl of the vegetables over the green circle */
+.row-2 .bowl-vegetables {
+  position: absolute;
+  /* In % it follows the horizontal shrink to show: src="/assets/images/hero-section-food.png"*/
+  top: 26%;
+  left: 20%;
+}
+
+/*   Sobre Nosotros */
+.row-2 .about-us{
+  color: red;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 180px;
+  margin-left: 280px;
+}
+
+/* Algunas palabras sobre nosotros */
+.row-2 .header-text{
+  color:black;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-top: 10px;
+  margin-left: 280px;
+}
+
+/* No somos una casa de comidas....  */
+.row-2 .we-are{
+  color:black;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-left: 280px;
+}
+/* End of Row 2 styling */
+
+
+/* Row 3 Menu 
+Is a grid of 2 asymmetrical rows, the top for the text the bottom for the menu cards */
+.row-3 {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  height: 500px;
+}
+
+/* The top row with text part of the menu. With Flex I create 3 rows of centered text  */
+.row-3 .menu-text{
+  background-color:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Menu */
+.row-3 .menu-title{
+  margin-top: 10px;
+  color: red;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* Explora Nuestra Mejor Comida */
+.row-3 .menu-explore{
+  margin-top: 10px;
+  color:black;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+/* Nuestros platos especiales */
+.row-3 .menu-especiales{
+  margin-bottom: 10px;
+  color:black;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* The cards with the pictures */
+.row-3 .menu-cards{
+  display: grid;
+  /* We use 2 dummy <divs> to add extra space at the left and right, the card occupy 1fr spaces */
+  grid-template-columns: 0.2fr 1fr 1fr 1fr 0.2fr;
+  background-color:white;
+}
+
+/* 
+Style the box with a shadow below
+box-shadow: none|h-shadow v-shadow blur spread color |inset|initial|inherit;
+For our diffused shadow effect, we’re going to need:
+h-shadow: horizontal shadow (even though we don’t want a horizontal shadow, this value is required by CSS so we set it at 0px)
+v-shadow: vertical shadow
+blur: blur distance
+spread: size of the shadow (spread is the key to achieving this effect)
+color: for the softness, we’ll use rgba for this so we can set an opacity to the alpha value
+*/
+.row-3 .card {
+  border: solid 2px lightgray;
+  box-shadow: 0px 13px 21px -10px rgba(0, 0, 0, 0.6);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin: 20px;
+  margin: 10px 10px 20px 10px;
+}
+
+  /* Hamburguesa Vegggie< */
+ .menu-name {
+  margin: 10px 10px 10px 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* De soja y quinoa */
+.menu-content {
+  margin: 10px 10px 10px 10px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+/* End of Row 3 styling */
+
+
+/* Row 4 Clientes 
+Is a grid of 2 asymmetrical rows, the top for the text the bottom for the Clientes pictures */
+
+/* The top row with text part of the customers. With Flex I create 1 row of centered text  */
+.row-4 .clientes-text{
+  background-color:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 15px;
+  color:black;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+/* The bottom row with the customers pictures */
+.row-4 .clientes-fotos{
+  display: grid;
+  grid-template-rows: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color:white;
+} 
+/* End of Row 4 styling */
+
+/* Row 5 Contacto */
+.row-5{
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  height: 400px;
+}
+
+/* The top row with text Contacto and Los estamos esperando */
+.text-row5{
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+
+  background-color: white;
+  
+}
+
+/* Bottom row with the contact information */
+.opening-hours{
+  background-color: white;
+}
+
+/* The text: Contacto */
+.contacto-text{
+  margin-top: 50px;
+  color: red;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* The text: Los estamos */
+.esperando-text{
+  color:black;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+/* The grid with the contact information */
+.opening-hours{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+  padding-top: 30px;
+}
+
+/* The forms with the icons and text */
+.contacto-ovalo{
+  height: 100px;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  font-size: 1.1rem;
+  font-weight: 800;
+  border-bottom: solid 2px lightgray;
+  border-radius: 40px;
+  box-shadow: 0px 13px 21px -10px rgba(0, 0, 0, 0.6);
+  padding-left: 50px;
+  padding-right: 50px;
+}
+/* End of Row 5 Contacto formatting*/
+
+
+/* Row 6 Bottom Navbar */
+.row-6{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  background-color:lightgray;
+}
+
+/* The styling of the bottom nav bar */
+.navegacion-inferior {
+  display: flex;
+  height: 80px;
+}
+
+/* The styling of the logo in the bottom navigation bar */
+.logo-bottom{
+  transform: scale(0.35); /* set the desired scale factor */
+}
+
+/* The styling of the social networks in the bottom navigation bar */
+.social-network{
+ padding: 28px;
+}
+
+/* The styling of the navigation bar using Flex to center the items */
+.footer {
+  display: grid;
+  justify-content: start;
+  align-content: center;
+  background-color: white;
+  height: 60px;
+  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-top: 3px solid lightslategray;
+  padding-left: 60px;
+  font-size: 1rem;
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- <meta charset="UTF-8"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <!-- Why normalize:  https://www.geeksforgeeks.org/normalize-css/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="./CSS/index.css">
+    <title>Veggie King</title>
+    <script src="./JS/index.js" async></script>
+   </head>
+
+  <body class="body">
+    <main class="main-content">
+      <!-- Navigation menu -->
+      <section class="navegacion" title="navegacion">
+        <!-- Logo -->
+        <img src="./assets/icons/logo.svg" class="logo" title="logo"  alt="logo">
+        <!-- Navigation items -->
+        <section class="navegacion-items" title="Items del menu">
+          <a href="#about-us" title="Nosotros">NOSOTROS </a>
+          <a href="#menu" title="Menu">MENU</a>
+          <a href="#contacto" title="Contacto">CONTACTO</a>
+        </section>
+      </section>
+
+      <!-- The first row with the text and the bowl -->
+      <section class="row-1" title="Comida natural">
+        <div class="left-text">
+          <div class="header-text" title="Sano y fresco">
+            Comida Sana & Fresca<br>Para Usted!
+          </div>
+          <div class="normal-text">
+            Creada por nuestros expertos<br>en comida natural
+          </div>
+          <!-- The button to go to the menu, the onclick does the magic to go to the link -->
+          <div class="button-div" title="Menu">
+            <button onclick="window.location.href='#menu'" class="button-menu">Menu &nbsp<i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+
+        </div>
+        <div class="right-picture">
+          <img src="./assets/images/hero-section-slide-food-1.png" alt="Bowl con vegetales" title="Bowl con vegetales" width="300px" height="270px" class="sarten-vegetales">
+        </div>
+      </section>
+
+      <!-- The second row: About Us -->
+      <section class="row-2" title="Sobre Nosotros">
+          <div class="left-vegetables">
+            <!-- The picture hero-section-food -->
+            <img src="./assets/images/hero-section-food.png" alt="algunas verduras" title="algunas verduras" width="70px" height="100px" class="row2-food">
+              <!-- The part of a green circle -->
+            <div class="green-circle">        
+            </div>
+            <!-- The bowl of vegetables on top of the green circle -->
+            <div class="bowl-vegetables">
+              <img src="./assets/images/about-us-section-food.png" alt="Ingredientes" title="Nuestros ingredientes" width="210px" height="210px" class="row2-food">
+            </div>
+          </div>
+                   
+          <div class="right-text">
+            <div class="about-us" id="about-us"  title="Sobre Nosotros">
+              Sobre Nosotros
+            </div>
+            <div class="header-text">
+              Algunas palabras sobre nosotros
+            </div>
+            <div class="we-are">
+              No somos un "Food Truck" como todos.<br>
+              Creamos un lugar lleno de energía natural<br>
+              y comida sana. &nbsp Veni a conocernos!
+            </div>
+          </div>
+      </section>
+
+      <!-- The third row:  Menu -->   
+        <section class="row-3" id="menu" title="Menu">
+          <div class="menu-text">
+            <div class="menu-title">
+              Menu
+            </div>
+            <div class="menu-explore">
+              Explora Nuestra Mejor Comida
+            </div>
+            <div class="menu-especiales">
+              Nuestros platos especiales
+            </div>
+          </div>
+
+            <div class="menu-cards" title="Nuestras recomendaciones">
+              <div></div>
+              <div class="card">
+                <img src="./assets/images/menu-section-mighty-burger.png" alt="Hamburguesa" title="Hamburguesa" width="100%" height="70%">
+                <div class="menu-name">Hamburguesa Vegggie</div>
+                <div class="menu-content">De soja y quinoa</div>
+              </div>
+              <div class="card">
+                <img src="./assets/images/menu-section-chickpae-salad.png" alt="Ensalada Chickpae" title="Enslada Chikpae" width="100%" height="70%">
+                <div class="menu-name">Ensalada Chickpae</div>
+                <div class="menu-content">Condimento Mexicano</div>
+              </div>
+              <div class="card">
+                <img src="./assets/images/menu-section-chickpae-wrap.png" alt="Chickpae Wrap" title="Chickpae Wrap" width="100%" height="70%">
+                <div class="menu-name">Chickpae Wrap</div>
+                <div class="menu-content">Wrap Casero sin TAC</div>
+              </div>  
+              <div></div>
+            </div>
+         </section> 
+        
+         <!--The fourth row: Clientes Contentos   -->
+         <section class="row-4" title="Clientes Contentos">
+          <!-- Top row with the text   -->
+            <div class="clientes-text">
+              Buena Comida = Clientes Contentos
+            </div>
+          <!-- Bottom row with the pictures   -->  
+            <div class="clientes-fotos">
+              <div class="customer-pictures">
+                <img src="./assets/images/gallery-photo-1.png" alt="Foto Cliente" title="Foto Cliente" width="100%" height="100%">
+              </div>
+              <div class="customer-pictures">
+                <img src="./assets/images/gallery-photo-2.png" alt="Foto Cliente" title="Foto Cliente" width="100%" height="100%">
+              </div>
+              <div class="customer-pictures">
+                <img src="./assets/images/gallery-photo-3.png" alt="Foto Cliente" title="Foto Cliente" width="100%" height="100%">
+              </div>
+              <div class="customer-pictures">
+                <img src="./assets/images/gallery-photo-4.png" alt="Foto Cliente" title="Foto Cliente" width="100%" height="100%">
+              </div>
+              <div class="customer-pictures">
+                <img src="./assets/images/gallery-photo-5.png" alt="Foto Cliente" title="Foto Cliente" width="100%" height="100%">
+              </div>
+              <div class="customer-pictures">
+                <img src="./assets/images/gallery-photo-6.png" alt="Foto Cliente" title="Foto Cliente" width="100%" height="100%">
+              </div>
+            </div>
+         </section>
+
+         <!--The fifth row: Los estamos esperando   -->
+         <section class="row-5" title="Los estamos esperando">
+            <!-- Top row with the text   -->
+            <div class="text-row5">
+                <div class="contacto-text" id="contacto" title="Contacto">
+                  Contacto
+                </div>
+                <div class="esperando-text"  title="Los estamos esperando">
+                  Los estamos esperando!
+                </div>
+            </div>
+            <!-- Bottom row with the icons and the text -->
+            <div class="opening-hours">
+                <div class="contacto-ovalo">
+                  <img src="./assets/icons/time-icon.svg" alt="Horarios" title="Horarios">
+                  <p title="Horarios">Hoy de 12 a 21</p>
+                </div>
+                <div class="contacto-ovalo">
+                  <img src="./assets/icons/map-icon.svg" alt="Direccion" title="Direccion">
+                  <p title="Direccion">Av Belgrano 2910 CABA</p> 
+                </div>
+                <div class="contacto-ovalo">
+                  <img src="./assets/icons/phone-icon.svg" alt="Telefono" title="Telefono">
+                  <p title="Telefono">11 2330 4444</p>
+                </div>
+            </div>
+         </section>
+
+          <!--The sixth row: Bottom Navbar   -->
+          <section class="row-6">
+            <div class="navegacion-inferior" title="Navegacion">
+                <!-- Logo -->
+                  <img src="./assets/icons/logo.svg" class="logo-bottom" title="logo"  alt="logo">
+                <!-- Navigation items -->
+                  <section class="navegacion-items" title="Items del menu">
+                  <a href="#about-us" title="Nosotros">NOSOTROS </a>
+                  <a href="#menu" title="Menu">MENU</a>
+                  <a href="#contacto" title="Contacto">CONTACTO</a>
+            </div>
+            <div class="social-network" title="Redes Sociales" >
+              Estamos en estas redes sociales
+              <p>
+                <img src="./assets/icons/twitter-icon.svg" alt="Twitter" title="Twitter"> &nbsp
+                <img src="./assets/icons/facebook-icon.svg" alt="Facebook" title="Facebook"> &nbsp
+                <img src="./assets/icons/instagram-icon.svg" alt="Instagram" title="Instagram">
+              </p>
+              <!-- To add an aditional border below -->
+              <!-- <div></div> -->
+
+            </div>
+          </section>
+
+          <!-- Footer -->
+          <section class="footer">
+            &copy; 2023 The Veggie King
+          </section>
+
+
+      
+    </main>
+  </body>
+</html>
